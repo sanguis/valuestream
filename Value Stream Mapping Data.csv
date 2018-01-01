@@ -1,0 +1,37 @@
+Step,Step Performed by,Story Handed to upon completion,Ave Processing time,Ave Delay time,Reports to System?,Promoted to environment?,Loops back to on failure?
+Idea comes form customer,The customer,Agile team -PO,,40:00,Rally,The Imagination,
+Story created in Agile Team Back log,Agile team -PO,Agile team -PO,1:00,,Rally,The Imagination,Idea comes form customer
+Story groomed and added to Sprint,Agile team -PO,Agile team -Dev,1:00,40:00,Rally sprint,The Imagination,Idea comes form customer
+Development- Logic Created ,Agile team -Dev,Agile team - Dev,8:00,8:00,Git Log,Localhost,Idea comes form customer
+Development- Tests Created,Agile Team - QA,Git Hub - Push,8:00,8:00,,Localhost,Idea comes form customer
+Pull request created,Agile team - Dev,CICD Pipeline,0:10,00,Github PR,Localhost,
+Run Build,CICD Pipeline,CICD Pipeline,0:01,,Jenkins Log,Localhost,Development- Logic Created 
+Deploy to dev,CICD Pipeline,CICD Pipeline,0:01,,Jenkins Log,Dev,Development- Logic Created 
+Code Coverage,CICD Pipeline,CICD Pipeline,0:01,,Jenkins Log,Dev,Development- Logic Created 
+Unit Testing,CICD Pipeline,CICD Pipeline,0:01,,Jenkins Log,Dev,Development- Logic Created 
+Early Security testing -via retire JS,CICD Pipeline,CICD Pipeline,0:01,,Jenkins Log,Dev,Development- Logic Created 
+Dev Environment Run tests,CICD Pipeline,Agile Team - Dev,0:01,,Github PR,Dev,Development- Logic Created 
+Code Review,Agile Team -Dev,Agile Team - Dev,1:00,8:00,GitHub PR,Dev,Development- Logic Created 
+Pull request approved,Agile Team -Dev,Agile Team - Dev,1:00,8:00,GitHub PR,Dev,Development- Logic Created 
+Feature Branch Merged int to Dev,Agile Team -Dev,Agile Team - Dev,1:00,8:00,GitHub PR,Dev,Development- Logic Created 
+Deployed to Int,Agile Team -Dev,Agile Team - Dev,1:00,8:00,GitHub PR,Int,Development- Logic Created 
+Code Coverage,CICD Pipeline,CICD Pipeline,0:01,,Jenkins Log,Int,Development- Logic Created 
+Unit Testing,CICD Pipeline,CICD Pipeline,0:01,,Jenkins Log,Int,Development- Logic Created 
+Smoke tests -Automated,CICD Pipeline,QA Team,0:01,,Jenkins Log,Int,Development- Logic Created 
+Manual Testing,QA Team,QA & Agile Team,2:00,8:00,HP ALM QC,Int,
+Request for promotion,QA & Agile Team,DevOps team,0:10,8:00,DevOps Rally Board,Int,
+Bulk Deploy To UAT,DevOps Team,CICD Pipeline,0:10,8:00,Jenkins Log,UAT,
+Smoke tests -Automated,CICD Pipeline,CICD Pipeline,0:10,,Jenkins Log,UAT,
+Automated UAT Tests,CICD Pipeline,DevOps team,0:10,,Jenkins Log,UAT,
+Request For end to end testing,DevOps Team,QA Team,0:10,4:00,HP ALM QC,UAT,
+Manual End To End Testing,QA Team,DevOps team,120:00:00,8:00,HP ALM QC,UAT,Development- Logic Created 
+Artifact Creation Job run,DevOps Team,CICD Pipeline,0:05,8:00,Jenkins Log,UAT,
+Artifact creation and storing in Artifact Repo,CICD Pipeline,DevOps team,1:00,,Jenkins Log,Artifactory,
+Deploy to Model Office,DevOps Team,CICD Pipeline,1:00,8:00,Jenkins Log,MO,
+Automated  Tests,CICD Pipeline,DevOps team,0:10,,Jenkins Log,MO,
+Request For end to end testing,DevOps Team,QA Team,0:10,4:00,HP ALM QC,MO,
+Manual End To End Testing,QA Team,DevOps team,24:00:00,8:00,HP ALM QC,MO,Development- Logic Created
+Queued for release,DevOps Team,DevOps team,1:00,8:00,Release Spread sheet,MO,
+Deploy to Prod,DevOps Team,QA Team,6:00,160:00:00,Release Spread sheet,Production,
+Manual End To End Testing,QA Team,DevOps team,24:00:00,8:00,HP ALM QC,Production,Development- Logic Created
+Singed off as Done,DevOps Team,The Customer,,,,,
