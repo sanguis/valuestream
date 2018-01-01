@@ -1,0 +1,22 @@
+{
+  "name": "value-stream-map-generator",
+  "version": "1.0.0",
+  "description": "A lib to take a csv file and generate an image that contains a value stream map",
+  "main": "index.js",
+  "scripts": {
+    "test": "generate-vsm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanguis/valuestream.git"
+  },
+  "keywords": [
+    "value stream mapping"
+  ],
+  "author": "Josh Beauregard, Ben Dalby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanguis/valuestream/issues"
+  },
+  "homepage": "https://github.com/sanguis/valuestream#readme"
+}
