@@ -9,14 +9,13 @@
   #tableValueStream, #tableValueStream td, #tableValueStream th {border: 1px solid black;}
   #tableValueStream {border-collapse: collapse;}
 </style>
-  <script language="javascript" src="./js/vsm.js"></script>
+  <script language="javascript" src="../libs/vsm.js"></script>
 
 </head>
 <body onload="testCall()">
 
 <a href="https://github.com/bendalby82/valuestream"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
-<!--http://diveintohtml5.info/canvas.html-->
 <h2 style="font-family: helvetica;">Value Stream Editor</h2>
 <table id="tableFormatting" border="0">
 	<tr>
@@ -27,25 +26,6 @@
 	</tr>
 </table>
 <p/>
-<table id="tableValueStream">
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Work Time</th>
-        <th>Elapsed Time</th>
-        <th>Wait Time</th>
-        <th>Delete?</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td><input size=25 type="text" id="boxStepName" onfocusout="parseTable()"/></td>
-        <td><input size=10 type="text" id="boxStepWorkTime" onfocusout="parseTable()"/></td>
-        <td><input size=10 type="text" id="boxStepElapsedTime" onfocusout="parseTable()"/></td>
-        <td><input size=10 type="text" id="boxStepWaitTime" onfocusout="parseTable();addRow(this);"/></td>
-        <td><input type="button" id="delValueStreamRow" value="Delete" onclick="deleteRow(this)"/></td>
-    </tr>
-</table>
-<!--<input type="button" id="addValueStreamRow" value="Add Row" onclick="addRow()" /><br/>-->
 <h2 style="font-family: helvetica;">Value Stream Map</h2>
 <canvas id="a" width="800" height="140" class="clear" style="border:1px dotted;float:none;"></canvas>
 <p />
@@ -53,7 +33,6 @@
 
 <h2 style="font-family: helvetica;">Value Stream as Code</h2>
 <textarea onfocusout="refreshDrawing()" rows="10" cols="62" id="jsondata" style="font-family: courier;"> </textarea>
-<p><em>Check me into source code control</em></p>
 
 </body>
 </html>
